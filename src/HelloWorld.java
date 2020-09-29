@@ -71,7 +71,7 @@ public class HelloWorld {
         String roomHeight = scan.next();
         double height = Double.parseDouble((roomHeight));
 
-        System.out.printf("So your workspace is %s ft long and %s ft wide.\n", roomLength, roomWidth);
-        System.out.printf("That would mean your workspace has a perimeter of %.2f ft, an area of %.2f square ft, and a volume of %.2f ft.", 2*(length+width), (length*width), (length*width*height));
+        System.out.printf("So your workspace is %s ft long, %s ft wide, and %s ft tall.\n", roomLength, roomWidth, roomHeight);
+        System.out.printf("That would mean approximately your workspace has a perimeter of %.2f ft, an area of %.2f square ft, and a volume of %.2f ft.", 2*(length+width), (length*width), (length*width*height));
     }
 }
