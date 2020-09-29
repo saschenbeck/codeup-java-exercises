@@ -60,12 +60,18 @@ public class HelloWorld {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("What is the length of the room you are working in via ft?");
-        String userLength = scan.nextLine();
-        double length = Double.parseDouble(userLength);
+        String roomLength = scan.nextLine();
+        double length = Double.parseDouble(roomLength);
+
         System.out.println("What is the width of the room you are working in via ft?");
-        String userWidth = scan.nextLine();
-        double width = Double.parseDouble(userWidth);
-        System.out.printf("So your workspace is %s ft long and %s ft wide.\n", userLength, userWidth);
-        System.out.printf("That would mean your workspace has a perimeter of %.2f ft and an area of %.2f square ft", 2*(length+width), (length*width));
+        String roomWidth = scan.nextLine();
+        double width = Double.parseDouble(roomWidth);
+
+        System.out.println("What is the height of the room you are working in via ft?");
+        String roomHeight = scan.next();
+        double height = Double.parseDouble((roomHeight));
+
+        System.out.printf("So your workspace is %s ft long and %s ft wide.\n", roomLength, roomWidth);
+        System.out.printf("That would mean your workspace has a perimeter of %.2f ft, an area of %.2f square ft, and a volume of %.2f ft.", 2*(length+width), (length*width), (length*width*height));
     }
 }
