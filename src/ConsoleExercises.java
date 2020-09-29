@@ -17,10 +17,10 @@ public class ConsoleExercises {
         String userSecondWord = scanner.next();
         String userThirdWord = scanner.next();
         System.out.printf("Interesting, I would have never guessed %s, %s, and %s.\n", userFirstWord, userSecondWord, userThirdWord);
+        scanner.nextLine();
 
         System.out.println("Next one, what is your favorite quote?");
-        String userQuote = scanner.next();
-        scanner.nextLine();
+        String userQuote = scanner.nextLine();
         System.out.printf("\"%s\" is quite the quote.\n", userQuote);
 
         Scanner scan = new Scanner(System.in);
