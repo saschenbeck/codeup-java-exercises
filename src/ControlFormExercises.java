@@ -70,7 +70,7 @@ public class ControlFormExercises {
             System.out.println("number | square | cubed");
             System.out.println("-------|--------|------");
             for (int y = 1; y <= userInteger; y++){
-                System.out.printf("%s      |%s       |%s \n",y, y*y, y*y*y);
+                System.out.printf("%-7s|%-8s|%s \n",y, y*y, y*y*y);
             }
             System.out.println("Would you like to go again? [Y/N]");
             String userInput = scan.next();
