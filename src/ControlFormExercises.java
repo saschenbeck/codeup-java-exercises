@@ -2,34 +2,34 @@ import java.util.Scanner;
 
 public class ControlFormExercises {
     public static void main(String[] args){
-        //1A
-        int i = 5;
-        while (i <= 15){
-            System.out.print(i+ " ");
-            i++;
-        }
-        System.out.println("");
-        //1B
-        int count2s = 0;
-        do {
-            count2s += 2;
-            System.out.println(count2s);
-        } while (count2s < 100);
-
-         int minus5 = 100;
-        do {
-            minus5 -= 5;
-            System.out.println(minus5);
-        } while (minus5 > -10);
-
-        long squareResult = 2;
-        do {
-            System.out.println(squareResult);
-            squareResult *= squareResult;
-            if (squareResult > 1000000){
-                break;
-            }
-        } while (squareResult < 1000000);
+//        //1A
+//        int i = 5;
+//        while (i <= 15){
+//            System.out.print(i+ " ");
+//            i++;
+//        }
+//        System.out.println("");
+//        //1B
+//        int count2s = 0;
+//        do {
+//            count2s += 2;
+//            System.out.println(count2s);
+//        } while (count2s < 100);
+//
+//         int minus5 = 100;
+//        do {
+//            minus5 -= 5;
+//            System.out.println(minus5);
+//        } while (minus5 > -10);
+//
+//        long squareResult = 2;
+//        do {
+//            System.out.println(squareResult);
+//            squareResult *= squareResult;
+//            if (squareResult > 1000000){
+//                break;
+//            }
+//        } while (squareResult < 1000000);
 
         //1C
         for (int j = 5; j <= 15; j++){
