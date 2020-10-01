@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ControlFormExercises {
+public class ControlFlowExercises {
     public static void main(String[] args){
 //        //1A
 //        int i = 5;
