@@ -9,5 +9,9 @@ public class StringExercise {
 
         String cDrive = "In windows, the main drive is usually C:\\";
         System.out.println(cDrive);
+
+        String multiBackslash = "I can do backslashes \\, double backslashes \\\\,\n" +
+                                "and the amazing triple backslash \\\\\\!";
+        System.out.println(multiBackslash);
     }
 }
