@@ -65,13 +65,17 @@ public class MethodExercises {
             System.out.print("All you had to put was \"Y\"!");
             return;
         }
+
+        //Rolling
         System.out.println("*insert rolling sounds*");
         int min = 1;
         int max = userValue;
         for (int i = 1; i <= 2; i++){
-            int diceRoll = (int) (Math.random() * (max - min) + min);
+            int diceRoll = (int) Math.floor(Math.random() * max) + min;
             System.out.printf("Dice %s Value: " + diceRoll + "\n", i);
         }
+
+        //Roll Again?
         System.out.print("Would you like to roll again? [Y/N]: ");
         String userConfirm = userInput.next();
         if (userConfirm.equalsIgnoreCase("y")){
@@ -80,7 +84,11 @@ public class MethodExercises {
 
     }
 
+    public static void guessingGame(){
+
+    }
+
     public static void main(String[] args) {
-        diceRoll();
+diceRoll();
     }
 }
