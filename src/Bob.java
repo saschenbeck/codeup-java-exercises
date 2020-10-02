@@ -3,20 +3,37 @@ import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
         boolean conversation = true;
+        int counter = 0;
         Scanner userInput = new Scanner(System.in);
         do {
-            System.out.println("Lets try talking with Bob.");
-            String userText = userInput.nextLine();
-            if (userText.endsWith("?")){
-                System.out.println("You: " + userText);
-                System.out.println("Bob: Sure.");
+            if (counter == 0){
+                System.out.println("Lets try talking with Bob.");
+                System.out.print("You: ");
+                counter++;
+            }else {
+                System.out.print("You: ");
+                counter ++;
             }
 
-            System.out.println("Would you like to keep talking with Bob? [Y/N]");
-            String userContinue = userInput.nextLine();
-            if (userContinue.equalsIgnoreCase("N")){
-                conversation = false;
+            String userText = userInput.nextLine();
+            if (userText.endsWith("?")){
+                System.out.println("Bob: Sure.");
+            } else if (userText.endsWith("!")){
+                System.out.println("Bob: Whoa, chill out!");
+            } else if (userText.equals("")){
+                System.out.println("Bob: Fine. Be that way!");
+            } else {
+                System.out.println("Bob: Whatever.");
             }
+
+            if (counter % 4 == 0 || counter > 4){
+                System.out.println("Would you like to keep talking with Bob? [Y/N]");
+                String userContinue = userInput.nextLine();
+                if (userContinue.equalsIgnoreCase("N")){
+                    conversation = false;
+                }
+            }
+
         } while (conversation);
     }
 }
