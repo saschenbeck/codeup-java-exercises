@@ -26,16 +26,16 @@ public class MethodExercises {
         return x % y;
     }
 
-    public static int getInteger(int x, int y){
+    public static int getInteger(int min, int max){
+        System.out.printf("Enter a number between %s and %s: ", min, max);
         Scanner userInput = new Scanner(System.in);
         int userValue = userInput.nextInt();
-        if(userValue < x || userValue > y){
-            System.out.print("Enter a proper number: ");
-            return getInteger(x, y);
+        if(userValue < min || userValue > max){
+            System.out.print("Enter a proper number!\n");
+            return getInteger(min, max);
         }
+        System.out.printf("Your number, %s, falls within the parameters set.", userValue);
             return userValue;
-        // example: System.out.print("Enter a number between 1 and 10: ");
-        //          int userInput = getInteger(1,10);
     }
 
     public static long factorial(){
@@ -136,6 +136,6 @@ public class MethodExercises {
     }
 
     public static void main(String[] args) {
-        guessingGame();
+        int input = getInteger(1,10);
     }
 }
