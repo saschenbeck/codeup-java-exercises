@@ -15,12 +15,12 @@ public class Bob {
                 counter ++;
             }
 
-            String userText = userInput.nextLine();
-            if (userText.trim().endsWith("?")){
+            String userText = userInput.nextLine().trim();
+            if (userText.endsWith("?")){
                 System.out.println("Bob: Sure.");
-            } else if (userText.trim().endsWith("!")){
+            } else if (userText.endsWith("!")){
                 System.out.println("Bob: Whoa, chill out!");
-            } else if (userText.trim().equals("")){
+            } else if (userText.equals("")){
                 System.out.println("Bob: Fine. Be that way!");
             } else {
                 System.out.println("Bob: Whatever.");
