@@ -34,19 +34,23 @@ public class MethodExercises {
             System.out.print("Enter a proper number!\n");
             return getInteger(min, max);
         }
-        System.out.printf("Your number, %s, falls within the parameters set.", userValue);
+        System.out.printf("Your number, %s, falls within the parameters set.\n", userValue);
             return userValue;
     }
 
     public static long factorial(){
-        System.out.print("Enter a integer for factorial: ");
-        Scanner userInput = new Scanner(System.in);
-        int userValue = userInput.nextInt();
+        int userValue = getInteger(1,10);
         long value = 1;
         for (int i = 1; i <= userValue; i++){
             value *= i;
         }
-        System.out.println(value);
+        System.out.printf("%s! = %s\n", userValue, value);
+        System.out.print("Would you like to try another [Y/N]: ");
+        Scanner userInput = new Scanner(System.in);
+        String userConfirm = userInput.next();
+        if (userConfirm.equalsIgnoreCase("y")){
+            factorial();
+        }
         return value;
     }
 
@@ -135,6 +139,6 @@ public class MethodExercises {
     }
 
     public static void main(String[] args) {
-        diceRoll();
+        factorial();
     }
 }
