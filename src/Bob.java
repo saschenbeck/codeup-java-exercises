@@ -16,11 +16,11 @@ public class Bob {
             }
 
             String userText = userInput.nextLine();
-            if (userText.endsWith("?")){
+            if (userText.trim().endsWith("?")){
                 System.out.println("Bob: Sure.");
-            } else if (userText.endsWith("!")){
+            } else if (userText.trim().endsWith("!")){
                 System.out.println("Bob: Whoa, chill out!");
-            } else if (userText.equals("")){
+            } else if (userText.trim().equals("")){
                 System.out.println("Bob: Fine. Be that way!");
             } else {
                 System.out.println("Bob: Whatever.");
