@@ -62,8 +62,7 @@ public class MethodExercises {
         System.out.print("Lets Roll! [y]: ");
         String userRoll = userInput.next();
         if (!(userRoll.equalsIgnoreCase("y"))){
-            System.out.print("All you had to put was \"Y\"!");
-            return;
+            System.out.println("All you had to put was \"Y\"!\nIf you won't roll them, then I will!");
         }
 
         //Rolling
@@ -136,6 +135,6 @@ public class MethodExercises {
     }
 
     public static void main(String[] args) {
-        int input = getInteger(1,10);
+        diceRoll();
     }
 }
