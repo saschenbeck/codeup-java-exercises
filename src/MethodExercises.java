@@ -50,7 +50,37 @@ public class MethodExercises {
         return value;
     }
 
+    public static void diceRoll(){
+        Scanner userInput = new Scanner(System.in);
+        userInput.useDelimiter("\n");
+
+        //Number of sides
+        System.out.print("How many sides should our dice have?: ");
+        int userValue = userInput.nextInt();
+
+        //User confirms to roll
+        System.out.print("Lets Roll! [y]: ");
+        String userRoll = userInput.next();
+        if (!(userRoll.equalsIgnoreCase("y"))){
+            System.out.print("All you had to put was \"Y\"!");
+            return;
+        }
+        System.out.println("*insert rolling sounds*");
+        int min = 1;
+        int max = userValue;
+        for (int i = 1; i <= 2; i++){
+            int diceRoll = (int) (Math.random() * (max - min) + min);
+            System.out.printf("Dice %s Value: " + diceRoll + "\n", i);
+        }
+        System.out.print("Would you like to roll again? [Y/N]: ");
+        String userConfirm = userInput.next();
+        if (userConfirm.equalsIgnoreCase("y")){
+            diceRoll();
+        }
+
+    }
+
     public static void main(String[] args) {
-        factorial();
+        diceRoll();
     }
 }
