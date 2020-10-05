@@ -15,7 +15,8 @@ public class Input {
         String userInput = scanner.nextLine();
         if (userInput.equalsIgnoreCase("Y") || userInput.equalsIgnoreCase("yes")){
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 }
