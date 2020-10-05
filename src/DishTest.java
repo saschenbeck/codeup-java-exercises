@@ -1,4 +1,4 @@
-public class DishTest {
+public class DishTest extends DishTools {
     public static void main(String[] args) {
        Dish d1 = new Dish();
        d1.costInCents = 5000;
@@ -14,5 +14,6 @@ public class DishTest {
        d1.printSummary();
        d2.printSummary();
 
+       shoutDishName(d1);
     }
 }
