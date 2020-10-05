@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodExercises {
+public class MethodsExercises {
     public static int addition(int x, int y) {
         return x + y;
     }
