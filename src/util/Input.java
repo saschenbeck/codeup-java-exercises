@@ -3,7 +3,11 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
+
+    public Input(){
+        this.scanner = new Scanner(System.in);
+    }
 
     String getString(){
         System.out.print("Enter a sentence: ");
