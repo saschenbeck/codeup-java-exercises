@@ -41,7 +41,7 @@ public class Input {
     double getDouble(double min, double max){
         System.out.printf("Enter a number between %s and %s: ", min, max);
         Scanner userInput = new Scanner(System.in);
-        int userValue = userInput.nextInt();
+        double userValue = userInput.nextDouble();
         if(userValue < min || userValue > max){
             System.out.print("Enter a proper number!\n");
             return getDouble(min, max);
