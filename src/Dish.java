@@ -1,8 +1,13 @@
 public class Dish {
-
     private int costInCents;
     private String nameOfDish;
     private boolean wouldRecommend;
+
+    public Dish(int cost, String name, boolean recommend) {
+        this.costInCents = cost;
+        this.nameOfDish = name;
+        this.wouldRecommend = recommend;
+    }
 
     public int getCostInCents(){
         return this.costInCents;
