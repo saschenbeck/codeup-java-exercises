@@ -9,14 +9,14 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-    String getString(){
+    public String getString(){
         System.out.print("Enter a sentence: ");
         String userInput = scanner.nextLine();
         String output = String.format("The userInput was : %s", userInput);
         return output;
     }
 
-    boolean yesNo(){
+    public boolean yesNo(){
         System.out.print("Yes or No: ");
         String userInput = scanner.nextLine();
         if (userInput.equalsIgnoreCase("Y") || userInput.equalsIgnoreCase("yes")){
@@ -26,7 +26,7 @@ public class Input {
         }
     }
 
-    int getInt(int min, int max){
+    public int getInt(int min, int max){
         System.out.printf("Enter a number between %s and %s: ", min, max);
         Scanner userInput = new Scanner(System.in);
         int userValue = userInput.nextInt();
@@ -38,11 +38,11 @@ public class Input {
         return userValue;
     }
 
-    int getInt(){
+    public int getInt(){
         int userInt = scanner.nextInt();
         return userInt;
     }
-    double getDouble(double min, double max){
+    public double getDouble(double min, double max){
         System.out.printf("Enter a number between %s and %s: ", min, max);
         Scanner userInput = new Scanner(System.in);
         double userValue = userInput.nextDouble();
@@ -54,7 +54,7 @@ public class Input {
         return userValue;
     }
 
-    double getDouble(){
+    public double getDouble(){
         double userDouble = scanner.nextDouble();
         return userDouble;
     }
