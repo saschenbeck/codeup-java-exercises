@@ -25,16 +25,16 @@ public class ArraysExercises {
         //for (Person person : people){
         //  System.out.println(person.getName());
         //}
-        addPerson(people, new Person("brandon"));
+        addPerson(people, new Person("Brandon"));
 
 
 
     }
     public static void addPerson(Person[] people, Person personToAdd){
-        Person[] copyArray = Arrays.copyOf(people, people.length+1);
-        copyArray[copyArray.length-1] = personToAdd;
-        for(Person newPerson: copyArray){
-            System.out.println(newPerson.getName());
+        Person[] copyPeopleArray = Arrays.copyOf(people, people.length+1);
+        copyPeopleArray[copyPeopleArray.length-1] = personToAdd;
+        for(Person individual: copyPeopleArray){
+            System.out.println(individual.getName());
         }
     }
 }
