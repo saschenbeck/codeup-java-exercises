@@ -6,8 +6,8 @@ public class ServerNameGenerator {
         nameGenerator(adjectives,nouns);
     }
     public static void nameGenerator(String[] x,String[] y){
-        int chosenAdjective = (int) Math.floor(Math.random() * x.length + 1);
-        int chosenNoun = (int) Math.floor(Math.random() * y.length + 1);
+        int chosenAdjective = (int) Math.floor(Math.random() * (x.length - 1) + 1);
+        int chosenNoun = (int) Math.floor(Math.random() * (y.length - 1) + 1);
 
         System.out.println("Here is your server name:\n" +
                 x[chosenAdjective] + "-" + y[chosenNoun]);
