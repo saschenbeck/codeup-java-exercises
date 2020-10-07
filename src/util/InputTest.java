@@ -6,6 +6,9 @@ public class InputTest {
 //        System.out.println(userInput.getString());
 //        System.out.println(userInput.yesNo());
 //        userInput.getInt(1,10);
-        userInput.getDouble(1,10);
+        userInput.getString();
+        userInput.yesNo();
+        userInput.getInt(1,10);
+        userInput.getDouble(1,20);
     }
 }
