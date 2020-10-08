@@ -1,8 +1,9 @@
 public class ServerNameGenerator {
+    public static String adjectives[] = {"Quirky", "Awesome","Intelligent","Stubborn","Dreadful","Optimistic","Insightful", "Apathetic","Complicated","Simple"
+    };
+    public static String nouns[] = {"Proton","Electron","Neutron","Protein","Carbohydrate","Zygote","Amoeba","Heart","Brain","Virus"};
     public static void main(String[] args) {
-        String adjectives[] = {"Quirky", "Awesome","Intelligent","Stubborn","Dreadful","Optimistic","Insightful", "Apathetic","Complicated","Simple"
-        };
-        String nouns[] = {"Proton","Electron","Neutron","Protein","Carbohydrate","Zygote","Amoeba","Heart","Brain","Virus"};
+
         nameGenerator(adjectives,nouns);
     }
     public static void nameGenerator(String[] x,String[] y){
