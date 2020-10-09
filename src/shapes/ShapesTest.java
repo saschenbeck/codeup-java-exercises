@@ -6,23 +6,32 @@ public class ShapesTest {
         Quadrilateral myFirstShape = new Rectangle(4,5);
         Measurable mySecondShape = new Square(5);
 
-        System.out.println("myShape.getArea() = " + myShape.getArea());
-        System.out.println("myShape.getPerimeter() = " + myShape.getPerimeter());
-        System.out.println("myFirstShape.getArea() = " + myFirstShape.getArea());
-        System.out.println("myFirstShape.getPerimeter() = " + myFirstShape.getPerimeter());
-        System.out.println("mySecondShape.getArea() = " + mySecondShape.getArea());
-        System.out.println("mySecondShape.getPerimeter() = " + mySecondShape.getPerimeter());
+//        System.out.println("myShape.getArea() = " + myShape.getArea());
+//        System.out.println("myShape.getPerimeter() = " + myShape.getPerimeter());
+//        System.out.println("myFirstShape.getArea() = " + myFirstShape.getArea());
+//        System.out.println("myFirstShape.getPerimeter() = " + myFirstShape.getPerimeter());
+//        System.out.println("mySecondShape.getArea() = " + mySecondShape.getArea());
+//        System.out.println("mySecondShape.getPerimeter() = " + mySecondShape.getPerimeter());
 
         /*Only allowed because myFirstShape is declared as a Quadrilateral rather than a Measurable
         * and setLenght is established at the Quadrilateral abstract class and not the Measurable
         * interface*/
-        myFirstShape.setLength(5);
-        System.out.println("myFirstShape.getArea() = " + myFirstShape.getArea());
-        System.out.println("myFirstShape.getPerimeter() = " + myFirstShape.getPerimeter());
-        System.out.println("myFirstShape.getLength() = " + myFirstShape.getLength());
-        myFirstShape.setLength(1);
-        System.out.println("myFirstShape.getArea() = " + myFirstShape.getArea());
-        System.out.println("myFirstShape.getPerimeter() = " + myFirstShape.getPerimeter());
-        System.out.println("myFirstShape.getLength() = " + myFirstShape.getLength());
+//        myFirstShape.setLength(5);
+//        System.out.println("myFirstShape.getArea() = " + myFirstShape.getArea());
+//        System.out.println("myFirstShape.getPerimeter() = " + myFirstShape.getPerimeter());
+//        System.out.println("myFirstShape.getLength() = " + myFirstShape.getLength());
+//        myFirstShape.setLength(1);
+//        System.out.println("myFirstShape.getArea() = " + myFirstShape.getArea());
+//        System.out.println("myFirstShape.getPerimeter() = " + myFirstShape.getPerimeter());
+//        System.out.println("myFirstShape.getLength() = " + myFirstShape.getLength());
+
+        Measurable[] shapesArray = new Measurable[3];
+        shapesArray[0] = myShape;
+        shapesArray[1] = myFirstShape;
+        shapesArray[2] = mySecondShape;
+        for (Measurable shape : shapesArray){
+            System.out.printf("%s.getArea() = " + shape.getArea() + "\n",shape);
+            System.out.printf("%s.getPerimeter() = " + shape.getPerimeter() + "\n",shape);
+        }
     }
 }
