@@ -8,4 +8,8 @@ public interface Measurable {
     double getLength();
 
     double getWidth();
+
+    void setLength(double i);
+
+    void setWidth(double i);
 }
