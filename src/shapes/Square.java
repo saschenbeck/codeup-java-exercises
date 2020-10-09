@@ -13,6 +13,15 @@ public class Square extends Quadrilateral{
         return Math.pow(this.length, 2);
     }
 
+    public void setLength(double length) {
+        this.length = length;
+        this.width = length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
+    }
 
 
 //    protected double side;
