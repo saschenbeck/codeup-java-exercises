@@ -33,7 +33,7 @@ public class Student {
         skyler.addGrade(99);
         skyler.addGrade(98);
         skyler.addGrade(97);
-        System.out.println("skyler.grades = " + skyler.grades);
+//        System.out.println("skyler.grades = " + skyler.grades);
         System.out.println("skyler.getGradeAverage() = " + skyler.getGradeAverage());
     }
 }
