@@ -66,7 +66,7 @@ public class GradesApplication {
             System.out.println("Current Attendance Percentage: "  + chosenStudent.attendancePercentage() + "%");
             System.out.println("Days absent: " + chosenStudent.numberOfAbsences());
         } else {
-            System.out.printf("Sorry, no hero named %s was found\n", userSelection.toUpperCase());
+            System.err.printf("Sorry, no hero named %s was found\n", userSelection.toUpperCase());
         }
         System.out.println();
         System.out.print("Would you like to see another hero? [Y/N]: ");
