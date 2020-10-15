@@ -29,6 +29,14 @@ public class Input {
     public int getInt(int min, int max){
         System.out.printf("Enter a number between %s and %s: ", min, max);
         Scanner userInput = new Scanner(System.in);
+        try {
+            String input = userInput.nextLine();
+            int userValue = Integer.parseInt(input);
+
+        } catch (RuntimeException re){
+            System.err.println("Enter an integer!");
+            return getInt(min, max);
+        }
         int userValue = userInput.nextInt();
         if(userValue < min || userValue > max){
             System.out.print("Enter a proper number!\n");
